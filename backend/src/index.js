@@ -18,7 +18,7 @@ app.use(cookieParser());
 //     credentials:true
 // }))
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://quick-chat-2byme.onrender.com",
     credentials:true
 }))
 app.get("/", (req, res) => {
