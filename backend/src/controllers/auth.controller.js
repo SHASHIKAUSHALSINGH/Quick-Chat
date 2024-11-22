@@ -63,7 +63,7 @@ export const login = async (req, res) => {
     }
 
     generateToken(user._id, res);
-
+   await user.save();
     res.status(200).json({
       _id: user._id,
       fullName: user.fullName,
