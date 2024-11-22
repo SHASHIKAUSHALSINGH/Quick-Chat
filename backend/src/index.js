@@ -19,7 +19,7 @@ const __dirname = path.dirname(__filename);
 
 
 
-// const PORT =process.env.PORT
+const PORT =process.env.PORT
 // const __dirname = path.resolve();
 app.use(express.json());
 app.use(cookieParser());
