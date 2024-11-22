@@ -7,7 +7,7 @@ export const generateToken = (userId, res) => {
   // third thing is object
 // ham token ko cookies ke form me return kara rahe hai
   res.cookie("jwt", token, {
-    maxAge: 7 * 24 * 60 * 60 * 1000, // MS
+    maxAge: 7 * 24 * 60 * 60 * 1000// MS
   });
 console.log(token);
   return token;
