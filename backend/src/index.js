@@ -20,7 +20,7 @@ app.use(cors({
 app.get("/", (req, res) => {
     res.send("Server is up and running!");
 });
-
+console.log(path.join(__dirname, "../frontend", "dist", "index.html"));
 app.use("/api/auth",authRoutes);  
 app.use("/api/messages",messageRoutes);  
 if (process.env.NODE_ENV === "production") {
