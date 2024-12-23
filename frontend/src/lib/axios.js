@@ -1,3 +1,9 @@
+// import axios from "axios";
+
+// export const axiosInstance = axios.create({
+//   baseURL: "https://quick-chat-1-4iq0.onrender.com/api",
+//   withCredentials: true,
+// });
 import axios from "axios";
 
 export const axiosInstance = axios.create({
