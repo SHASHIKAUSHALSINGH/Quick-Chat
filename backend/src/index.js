@@ -27,10 +27,7 @@ app.use(cookieParser());
 //     origin:"https://quick-chat-hbtu.vercel.app",
 //     credentials:true
 // }))
-app.use(cors({
-    origin:"https://quick-chat-2byme.onrender.com",
-    credentials:true
-}))
+app.use(cors())
 app.get("/", (req, res) => {
     res.send("Server is up and running!");
 });
