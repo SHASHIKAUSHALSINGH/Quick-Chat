@@ -23,11 +23,11 @@ const PORT =process.env.PORT
 const __dirname = path.resolve();
 app.use(express.json());
 app.use(cookieParser());
-// app.use(cors({
-//     origin:"https://quick-chat-hbtu.vercel.app",
-//     credentials:true
-// }))
-app.use(cors())
+app.use(cors({
+    origin:"https://deft-douhua-986e4f.netlify.app",
+    credentials:true
+}))
+// app.use(cors())
 app.get("/", (req, res) => {
     res.send("Server is up and running!");
 });
