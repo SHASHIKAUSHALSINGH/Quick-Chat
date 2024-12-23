@@ -5,9 +5,14 @@ import express from "express";
 const app = express();
 const server = http.createServer(app);
 
+// const io = new Server(server, {
+//   cors: {
+//     origin: ["https://quick-chat-hbtu.vercel.app"],
+//   },
+// });
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:5173"],
+    origin: ["https://quick-chat-2byme.onrender.com"],
   },
 });
 
